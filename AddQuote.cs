@@ -90,7 +90,7 @@ namespace MegaDesk_Behling
             {
                 double total = quote.calcPrice(rushOrder, (int)Drawers.Value, tempMaterial, surfaceArea);
                 
-                MessageBox.Show("Date: "+ now.ToString("dd MMMM yyyy")+ "\n\nName: "+FullName.Text+"\n\nSurface Area: "+surfaceArea+ "\"\n\nMaterial: "+tempMaterial+"\n\nShipping: "+ShippingBox.Text+"\n\nTotal Cost: $"+ total.ToString(), "Quote Summary", MessageBoxButtons.OK);
+                MessageBox.Show("Date: "+ now.ToString("dd MMMM yyyy")+ "\n\nName: "+FullName.Text+"\n\nSurface Area: "+surfaceArea+ "\"\n\nMaterial: "+tempMaterial+"\n\n# of drawers: "+Drawers.Value+"\n\nShipping: "+ShippingBox.Text+"\n\nTotal Cost: $"+ total.ToString(), "Quote Summary", MessageBoxButtons.OK);
             }
             catch (Exception e)
             {

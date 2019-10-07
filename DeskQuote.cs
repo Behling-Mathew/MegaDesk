@@ -29,7 +29,7 @@ namespace MegaDesk_Behling
 
             if (surfaceArea > 1000)
             {
-                total = BASE_COST + (int)material + drawers + rushOrder + surfaceArea;
+                total = BASE_COST + (int)material + drawers + rushOrder + surfaceArea - 1000; //charge $1 per inch after 1000
             }
             else total = BASE_COST + (int)material + drawers + rushOrder;
             return total;
